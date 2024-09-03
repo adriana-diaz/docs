@@ -47,3 +47,19 @@ A Resource Group in Azure is a container that holds related resources for an Azu
 8. Once connected, drag and drop the stored procedures (SP) you need from **Server Explorer** onto your LINQ to SQL classes.
 
 This process will automatically integrate your database and stored procedures with your LINQ to SQL model, enabling your project to interact with the Azure SQL Database.
+
+## Step 4: Publish Your API REST Application from Visual Studio 2019
+
+1. Right-click on your project in **Solution Explorer** and select **Publish**.
+2. In the **Pick a publish target** window, select **Azure** and then **Azure App Service (Windows)**.
+3. Click **Next**.
+4. Choose **Select existing** and click **Next**.
+5. Sign in to your Azure account if prompted.
+6. Select the App Service you created earlier and click **Finish**.
+7. Review the settings in the **Publish** window and click **Publish**.
+
+## Step 5: Verify the Deployment
+
+1. After the deployment is complete, Visual Studio will open a browser window to your app's URL.
+2. Verify that your API is running as expected and that it can interact with your Azure SQL Database.
+3. Perform your tests using Postman. For example, you can test your stored procedures (SP) using an endpoint like `https://yourwebappname.azurewebsites.net/api/usuario/ingresarusuario`.
