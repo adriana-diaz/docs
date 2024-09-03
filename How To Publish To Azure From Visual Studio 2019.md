@@ -78,4 +78,5 @@ This process will automatically integrate your database and stored procedures wi
 3. Perform your tests using Postman. For example, you can test your stored procedures (SP) using an endpoint like `https://yourwebappname.azurewebsites.net/api/usuario/ingresarusuario`.
 
 ## Additional Resources
-- [youtube video](https://www.youtube.com/watch?v=1ScH-USLYXg)
+- [Youtube video explanation](https://www.youtube.com/watch?v=1ScH-USLYXg)
+- [Deploy an ASP.NET app to Azure with Azure SQL Database](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)
