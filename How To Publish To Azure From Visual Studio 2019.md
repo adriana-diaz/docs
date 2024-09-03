@@ -35,7 +35,20 @@ A Resource Group in Azure is a container that holds related resources for an Azu
    - **Compute + storage**: Select a pricing tier that suits your needs.
 4. Click **Review + create**, then **Create**.
 
-## Step 3: Connect Your Visual Studio Project to the Database using LINQ
+## Step 3: Create an Azure Web App (App Service)
+
+1. In the Azure Portal, go to the **App Services** section from the left-hand menu.
+2. Click on **+ Add** at the top.
+3. Fill in the necessary details:
+   - **Subscription**: Select your Azure subscription.
+   - **Resource Group**: Select the Resource Group you created earlier.
+   - **Name**: Enter a unique name for your Web App.
+   - **Runtime stack**: Select the framework you are using (e.g., .NET Core, Node.js, Python).
+   - **Region**: Choose the region where you want your app to be hosted.
+   - **Pricing Plan**: Select a pricing plan that suits your needs (Free, Shared, Basic, etc.).
+4. Click **Review + create**, then **Create**.
+
+## Step 4: Connect Your Visual Studio Project to the Database using LINQ
 
 1. In Visual Studio, open your API REST project.
 2. Ensure that you've installed the necessary NuGet package to set up your LINQ to SQL connection, which will generate the `.dmlb` file.
@@ -48,7 +61,7 @@ A Resource Group in Azure is a container that holds related resources for an Azu
 
 This process will automatically integrate your database and stored procedures with your LINQ to SQL model, enabling your project to interact with the Azure SQL Database.
 
-## Step 4: Publish Your API REST Application from Visual Studio 2019
+## Step 5: Publish Your API REST Application from Visual Studio 2019
 
 1. Right-click on your project in **Solution Explorer** and select **Publish**.
 2. In the **Pick a publish target** window, select **Azure** and then **Azure App Service (Windows)**.
@@ -58,8 +71,11 @@ This process will automatically integrate your database and stored procedures wi
 6. Select the App Service you created earlier and click **Finish**.
 7. Review the settings in the **Publish** window and click **Publish**.
 
-## Step 5: Verify the Deployment
+## Step 6: Verify the Deployment
 
 1. After the deployment is complete, Visual Studio will open a browser window to your app's URL.
 2. Verify that your API is running as expected and that it can interact with your Azure SQL Database.
 3. Perform your tests using Postman. For example, you can test your stored procedures (SP) using an endpoint like `https://yourwebappname.azurewebsites.net/api/usuario/ingresarusuario`.
+
+## Additional Resources
+- [youtube video](https://www.youtube.com/watch?v=1ScH-USLYXg)
